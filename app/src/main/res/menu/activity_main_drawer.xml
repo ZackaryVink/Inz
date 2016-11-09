@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_collection"
+            android:icon="@drawable/ic_storage_black_24dp"
+            android:title="Collection" />
+        <item
+            android:id="@+id/nav_decks"
+            android:icon="@drawable/ic_view_carousel_black_24dp"
+            android:title="Decks" />
+        <item
+            android:id="@+id/nav_loanedCards"
+            android:icon="@drawable/ic_loyalty_black_24dp"
+            android:title="Loaned Cards" />
+        <item
+            android:id="@+id/nav_wantList"
+            android:icon="@drawable/ic_local_offer_black_24dp"
+            android:title="Want List" />
+        <item
+            android:id="@+id/nav_tradeList"
+            android:icon="@drawable/ic_local_atm_black_24dp"
+            android:title="Trade List" />
+    </group>
+
+</menu>

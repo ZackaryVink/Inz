@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Inz</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="menu_header">Inz Card Sorter</string>
+    <string name="menu_subheader">Created by Zackary Vink</string>
+
+    <string name="home_text">The Inz Card Sorter is used for storing information about Magic Cards you own.
+        It uses Andrew Backes's card API as a backend (https://magicthegathering.io/).</string>
+</resources>
