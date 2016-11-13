@@ -3,6 +3,10 @@ package com.skippy.inz;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -41,6 +45,11 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
+        if (savedInstanceState == null) {
+            getSupportFragmentManager().beginTransaction()
+                    .add(R.id.content_main, new HomeFragment(), "home")
+                    .commit();
+        }
 
     }
 
@@ -82,8 +91,10 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_collection) {
-
+        if (id == R.id.nav_home) {
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.content_main, new HomeFragment(), "home")
+                    .commit();
         } else if (id == R.id.nav_collection) {
 
         } else if (id == R.id.nav_decks) {

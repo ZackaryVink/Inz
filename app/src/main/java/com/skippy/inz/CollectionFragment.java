@@ -3,21 +3,24 @@ package com.skippy.inz;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 /**
- * Created by vinkz on 11/3/16.
+ * Created by zacharyvink on 11/12/16.
  */
 
-public class HomeFragment extends Fragment {
+public class CollectionFragment extends Fragment {
+    private RecyclerView mRecyclerView;
+    private RecyclerView.Adapter mAdapter;
+    private RecyclerView.LayoutManager mLayoutManager;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        final View rootView = inflater.inflate(R.layout.home_fragment, container, false);
-        return  rootView;
+        return super.onCreateView(inflater, container, savedInstanceState);
     }
+
 }

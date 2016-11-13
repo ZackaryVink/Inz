@@ -9,5 +9,5 @@
     <string name="menu_subheader">Created by Zackary Vink</string>
 
     <string name="home_text">The Inz Card Sorter is used for storing information about Magic Cards you own.
-        It uses Andrew Backes's card API as a backend (https://magicthegathering.io/).</string>
+        It uses Andrew Backes\'s card API as a backend (https://magicthegathering.io/).</string>
 </resources>
